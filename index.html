@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Display Utilities</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <style>
+    span {
+    width:100px;
+    height: 200px;
+    display:inline-block; 
+    }
+    #rect {
+    width: 200px;
+    height: 100px;
+    display:inline-block;
+    }
+  </style> 
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <div class="container">
+        <h1 class="display-2 text-center">Task 1: Application of D-None,d-inline and d-block</h1>
+        <h1 class="bg-success text-white">This is a hl block</h1> 
+        <h1 class="bg-secondary text-white d-inline">This is a hl inline block</h1>
+        <h1 class="bg-danger text-white d-block">This is a hl hidden block</h1>
+        <h1 class="d-none d-sm-block">This header is only XS viewport hidden</h1>
+        <h1 class="d-none d-md-block">This header is viewport hidden in XS and SM</h1>
+        <h1 class="d-none d-lg-block">This header is viewport hidden in XS, SM, MD</h1>
+    </div>
+    <div class="container">
+        <h1 class="display-2 text-center">Task 2:BREAKPOINTS WITH DISPLAY CONTROL</h1>
+            <h2>The Current BreakPoint you are in is:
+                <span class="d-inline d-sm-none text-danger"><strong>XS </strong></span>
+                <span class="d-none d-sm-inline d-md-none text-warning"><strong>SM </strong></span>
+                <span class="d-none d-md-inline d-lg-none text-success"><strong>MD </strong></span>
+                <span class="d-none d-lg-inline d-xl-none text-info"><strong>LG</strong></span>
+                <span class="d-none d-xl-inline d-xxl-none text-primary"><strong>XL</strong></span>
+                <span class="d-none d-xxl-inline text-dark"><strong>XXL</strong></span>
+            </h2>
+    </div>
+    <div class="container d-flex flex-column align-items-center">
+        <h1 class="display-2 text-center">
+            Task 3: Application of Border Additive with Contextual Background and Text Along with Margin Utility Application
+        </h1>
+        <div class="container p-3 text-center">
+            <div class="d-flex justify-content-around align-items-start">
+                <span class="border bg-dark-subtle border-danger">This has a border</span> 
+                <span class="border-success bg-dark-subtle border-start">This only have a border at left</span>
+                <span class="border-warning bg-dark-subtle border-end">This only have a border at right</span>
+                <span class="border-info bg-dark-subtle border-bottom">This only have a border at bottom</span>
+                <span class="border-dark bg-dark-subtle border-start border-end">This only have a border at left and right</span>
+                </div>
+            </div>  
+        <div class="d-flex justify-content-around align-items-start mt-2">
+            <h1 class="m-0 bg-success d-inline-block text-white text-start">m-0</h1>
+            <h1 class="m-1 bg-success d-inline-block text-white text-start">m-1</h1>
+            <h1 class="m-2 bg-success d-inline-block text-white text-start">m-2</h1>
+            <h1 class="m-3 bg-success d-inline-block text-white text-start">m-3</h1>
+            <h1 class="m-4 bg-success d-inline-block text-white text-start">m-4</h1>
+        </div>
+        </div>
+    </div>
+    
+    <div class="container d-flex flex-column align-items-center">
+        <h1 class="display-2 text-center">Task 4:Application of Border Subtractive with contextual background and text along with PADDING utility application.</h1>
+        <div class="container p-3 text-center">
+            <div class="d-flex justify-content-around align-items-start">
+                <span class="border-0 bg-light d-inline-block p-2">No border</span>
+                <span class="border bg-dark-subtle text-white border-danger border-top-0 d-inline-block p-2">This has no top border</span>
+                <span class="border bg-dark-subtle text-white border-success border-end-0 d-inline-block p-2">This has no right border</span>
+                <span class="border bg-dark-subtle text-white border-warning border-bottom-0 d-inline-block p-2">This has no bottom border</span>
+                <span class="border bg-dark-subtle text-white border-dark border-start-0 d-inline-block p-2">This has no left border</span>
+            </div>
+            <div class="d-flex justify-content-around align-items-start mt-2">
+            <h1 class="p-0 bg-success text-white d-inline-block">p-0</h1>
+            <h1 class="p-1 bg-success text-white d-inline-block">p-1</h1>
+            <h1 class="p-2 bg-success text-white d-inline-block">p-2</h1>
+            <h1 class="p-3 bg-success text-white d-inline-block">p-3</h1>
+            <h1 class="p-4 bg-success text-white d-inline-block">p-4</h1>
+            <h1 class="p-5 bg-success text-white d-inline-block">p-5</h1>
+        </div> 
+        </div>
+    </div>
+    <div class="container">
+        <h1 class="display-2 text-center">Task 5:Application of Border width, border colors and all the types of border radius</h1>
+        <div class="container">
+            <span class="border border-1 bg-light border-primary rounded"></span> 
+            <span class="border border-2 bg-success border-secondary rounded-1"></span> 
+            <span class="border border-3 bg-warning border-success rounded-2"></span>
+            <span class="border border-4 bg-dark border-danger rounded-3"></span>
+            <span class="border border-5 bg-primary border-warning rounded-3"></span>
+            <span class="border border-5 bg-primary  border-info rounded-circle"></span>
+            <span class="border border-4 border-dark rounded-pill" id="rect"></span>
+          </div>
+    </div>
+    <div class="container">
+        <h1 class="display-2 text-center">Task 6:Application of Rounded size, shadow with proper labeling </h1>
+        <div class="shadow-none p-3 mb-5 bg-light rounded border-light">No shadow</div>
+        <div class="border border-1 border-danger bg-danger-subtle shadow-sm p-3 mb-5 rounded">
+            Danger Border 1 and Small Shadow
+        </div>
+
+        <div class="border border-2 border-info bg-info shadow-sm p-3 mb-5 rounded">
+            Info Border 2 and Small Shadow
+        </div>
+
+        <div class="border border-3 border-secondary bg-secondary-subtle shadow-sm p-3 mb-5 rounded">
+            Secondary Border 3 and Small Shadow
+        </div>
+
+        <div class="border border-4 border-success text-white bg-success shadow p-3 mb-5 rounded">
+            Success Border 4 and Regular Shadow
+        </div>
+
+        <div class="border border-4 border-warning bg-warning shadow p-3 mb-5 rounded">
+            Warning Border 5 and Regular Shadow
+        </div>
+    </div>
+</body>
+</html>
